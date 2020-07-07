@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Partner Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+
+                    <div class="cube">
+
+                        <div class="card card-custom my-5 cube__face cube__face--front">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Sign In</h5>
+                                <form class="form-custom">
+                                    <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                        <label for="inputEmail">Email address</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+
+                                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                                    <hr class="my-4">
+                                    <button class="btn btn-lg btn-red btn-block text-uppercase" type="submit" id="forgotpass"> Forgot Password</button>
+                                    <button class="btn btn-lg btn-darkblue btn-block text-uppercase" type="submit" id="register">Register</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card card-custom my-5 cube__face cube__face--back">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Reset Password</h5>
+                                <form class="form-custom">
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Re-Enter Password" required>
+                                        <label for="inputConfirmPassword">Re-Enter Password</label>
+                                    </div>
+
+                                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Reset Password</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card card-custom my-5 cube__face cube__face--right">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Forgot Password</h5>
+                                <form class="form-custom">
+                                    <div class="form-label-group">
+                                        <input type="tel" id="inputPhone" class="form-control" placeholder="Registered Phone Number" required autofocus>
+                                        <label for="inputPhone">Registered Phone Number</label>
+                                    </div>
+
+                                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" id="toggleSection">Send OTP</button>
+                                    <div id="hidden">
+                                        <hr class="my-4">
+                                        <div class="form-label-group">
+                                            <input type="text" id="inputOTP" class="form-control" placeholder="Enter OTP" required autofocus>
+                                            <label for="inputOTP">Enter OTP</label>
+                                        </div>
+
+                                        <button class="btn btn-lg btn-darkblue btn-block text-uppercase" type="submit" id="resetpass"> Reset Password</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card card-custom my-5 cube__face cube__face--left">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Register</h5>
+                                <form class="form-custom">
+                                    <div class="form-label-group">
+                                        <input type="text" id="inputFirstname" class="form-control" placeholder="First Name" required>
+                                        <label for="inputFirstname">First Name</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="text" id="inputLastname" class="form-control" placeholder="Last Name" required>
+                                        <label for="inputLastname">Last Name</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                        <label for="inputEmail">Email Address</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="tel" id="inputPhone" class="form-control" placeholder="Phone Number" required autofocus>
+                                        <label for="inputPhone">Phone Number</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="file" id="inputProfilePicture" class="form-control" placeholder="Profile Picture" required accept="image/*">
+                                        <label for="inputProfilePicture">Profile Picture</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="text" id="inputCollege" class="form-control" placeholder="College Name" required>
+                                        <label for="inputCollege">College Name</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="file" id="inputCollegeLogo" class="form-control" placeholder="College Logo" required accept="image/*">
+                                        <label for="inputCollegeLogo">College Logo</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="file" id="inputCollegeId" class="form-control" placeholder="College Identification Proof" required accept="image/*">
+                                        <label for="inputCollegeId">College Identification Proof</label>
+                                    </div>
+
+
+
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Re-Enter Password" required>
+                                        <label for="inputConfirmPassword">Re-Enter Password</label>
+                                    </div>
+
+                                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
