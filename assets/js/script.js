@@ -16,6 +16,7 @@ $(document).ready(function() {
     });
 
     $("#forgotpass").click(function() {
+        document.getElementById('hideCard').style.visibility = "hidden";
         var showClass = 'show-right';
         if (currentClass) {
             cube.classList.remove(currentClass);
@@ -31,7 +32,7 @@ $(document).ready(function() {
         }
         cube.classList.add(showClass);
         currentClass = showClass;
-        $(".cube__face--left").hide();
+
     });
 
 });
